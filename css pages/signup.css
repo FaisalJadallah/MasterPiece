@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #9c72ff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+
+/* Left Side Styles */
+.col-md-6.bg-primary {
+    padding: 40px 30px;
+    text-align: center;
+    color: #fff;
+    background-color: #6A42C2 !important;
+}
+
+.col-md-6.bg-primary h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.col-md-6.bg-primary p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.col-md-6.bg-primary .fa-users {
+    font-size: 3rem;
+    margin-top: 20px;
+}
+
+/* Right Side Styles */
+.col-md-6.bg-light {
+    padding: 40px 30px;
+    background-color: #ffffff;
+    border-left: 3px solid rgba(106, 66, 194, 0.2);
+}
+
+.nav-pills .nav-link {
+    color: #6A42C2;
+    border-radius: 20px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #6A42C2;
+    color: #ffffff;
+    box-shadow: 0 3px 6px rgba(106, 66, 194, 0.3);
+}
+
+.nav-pills .nav-link:hover {
+    background-color: #55359a;
+    color: #ffffff;
+}
+
+/* Form Styles */
+form .form-label {
+    font-weight: bold;
+    color: #333;
+}
+
+form input {
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Button Styling */
+form .btn {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    background-color: #6A42C2;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form .btn:hover {
+    background-color: #4b1279;
+    transform: scale(1.02);
+}
+
+form .btn:active {
+    background-color: #481e7e;
+}
+
+/* Spacing and Layout */
+.mb-3 {
+    margin-bottom: 15px;
+}
+
+form input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+/* Additional Styling for Age, Phone, Address */
+#registerAge,
+#registerPhone,
+#registerAddress {
+    background-color: #f8f9fa;
+    color: #495057;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .col-md-6 {
+        width: 100%;
+    }
+
+    .col-md-6.bg-primary {
+        padding: 20px;
+    }
+
+    .col-md-6.bg-light {
+        padding: 20px;
+    }
+}

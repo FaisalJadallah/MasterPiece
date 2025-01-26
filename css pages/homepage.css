@@ -1,0 +1,304 @@
+/*================================Nav Bar=================================*/
+#userprofile {
+    display: flex;
+    gap: 30px;
+    margin-right: 10px;
+    margin-left: 100px;
+    margin-top: 13px;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#userprofile a {
+    color: #6A42C2; /* Updated color */
+}
+
+#userprofile a:hover {
+    transform: scale(1.3);
+    color: #6A42C2; /* Updated hover color */
+}
+
+.logospan {
+    font-family: "Monotype Corsiva", "Cursive", sans-serif;
+    font-size: 35px;
+    margin-bottom: -10px !important;
+}
+
+nav {
+    grid-column: span 12;
+    grid-row: 1;
+    z-index: 10;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.navbar {
+    background-color: #FFF7D1 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.nav-link {
+    color: #6A42C2 !important; /* Updated color */
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: White !important;
+    width: 80px;
+    height: 35px;
+    border-radius: 12px;
+    text-align: center;
+    background-color: #6A42C2; /* Updated background color */
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.25);
+}
+
+#active-nav:hover {
+    color: black !important;
+}
+
+.nav-item .signup-btn {
+    font-size: 14px;
+    color: black !important;
+    width: 90px;
+    height: 35px;
+    border-radius: 18px;
+    border: none;
+    text-align: center;
+    background-color: #FFF7D1;
+    margin-left: 100px;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.25);
+}
+
+.nav-item .signup-btn:hover {
+    background-color: #2c087a; /* Updated hover color */
+    color: White !important;
+}
+
+
+.nav-link:hover {
+    color: #160046 !important; /* Updated hover color */
+    transform: scale(1.2);
+}
+
+nav img {
+    width: 40px;
+    height: 40px;
+}
+
+nav p {
+    margin: 0px;
+    font-size: 24px;
+}
+
+.container-fluid {
+    margin-left: 75px;
+    margin-right: 110px;
+}
+
+/*===================================page content==================================*/
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Hero section styles */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    background: url('../assetss/freepik__adjust__17391 1 (1).png') no-repeat center center/cover; /* Background image */
+    color: white;
+    padding: 50px;
+    position: relative;
+    text-align: center;
+}
+
+.hero-content {
+    z-index: 2;
+    max-width: 55%;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.hero p {
+    color: #FFF7D1;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+    margin-top: 60px;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF7D1;
+    color: #333;
+}
+
+section {
+    padding: 2rem;
+    background-color: #FFF7D1;
+    color: #fff;
+}
+
+section > div:first-child {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #6A42C2;
+}
+
+.gifts {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    display:flex ;
+}
+
+.gifts > div {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+.gifts img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(106, 66, 194, 0.9);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gifts > div:hover .text-overlay {
+    transform: translateY(0);
+}
+
+.text-overlay h3 {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+.text-overlay p {
+    font-size: 1rem;
+    margin: 0;
+}
+/* From Uiverse.io by vinodjangid07 */ 
+.button {
+    width: 110px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #6A42C2;
+    border-radius: 30px;
+    color: rgb(19, 19, 19);
+    font-weight: 600;
+    border: none;
+    position: absolute; 
+    top: 150%; 
+    left: 50%; 
+    cursor: pointer;
+    transition-duration: .2s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+    padding-left: 8px;
+    transition-duration: .5s;
+}
+.center{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0px;
+}
+.explore{
+    text-decoration: none;
+    color: #FFF7D1;
+    background-color: #6A42C2;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+}
+.explore:hover {
+transition: 0.5s;
+transform: scale(1.1);
+background-color: #6b42c299;
+}
+  
+  .svgIcon {
+    height: 25px;
+    transition-duration: 1.5s;
+
+  }
+  
+  .bell path {
+    fill: rgb(19, 19, 19);
+  }
+  
+  .button:hover {
+    background-color: #4216a1;
+    transition-duration: .5s;
+  }
+  
+  .button:active {
+    transform: scale(0.97);
+    transition-duration: .2s;
+  }
+  
+  .button:hover .svgIcon {
+    transform: rotate(250deg);
+    transition-duration: 1.5s;
+  }
+  
+  
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .hero {
+        padding: 30px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        
+    }
+    
+
+}
